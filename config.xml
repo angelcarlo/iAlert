@@ -29,7 +29,6 @@ version="0.3.10-dev">
         </config-file>
 
 </platform>
-
 <gap:platform name="blackberry" project="widgets"/>
 </gap:platforms>
 <icon src="icon150.png" gap:role="default"/>
