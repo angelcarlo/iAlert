@@ -3,13 +3,7 @@
 
 
         <name>iAlert</name>
-      <description>
-Quick Disaster Update via Twitter by reliable government agencies.
-Locates nearby places to the user.
-
-Inform the users about earthquake fault lines in the Philippines.
-
-Weather advisories.</description>
+      <description>Quick Disaster Update via Twitter by reliable government agencies.</description>
         <author>Team tripleQuote</author>
 		<gap:platforms>
                 <gap:platform name="ios" />
