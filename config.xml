@@ -1,78 +1,38 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="shaketypeangel" version="1.0">
-<script id="tinyhippos-injected"/>
-
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-xmlns:rim="http://www.blackberry.com/ns/widgets"
-xmlns:android="http://schemas.android.com/apk/res/android"
-id="org.apache.cordova.geolocation"
-version="0.3.10-dev">
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="iAlert123"  version = "1.0.0" versionCode = "19" >
 
 
-    <license>Apache 2.0</license>
-    
+        <name>iAlert</name>
+        <description>Quick Disaster Update via Twitter by reliable government agencies.<br /><br />
 
-<name>iAlert</name>
-<description>iAlert</description>
-<author>tripleQuote</author>
+Locates nearby places to the user.<br />
 
-<keywords>cordova,geolocation</keywords>
-    <repo>https://git-wip-us.apache.org/repos/asf/cordova-plugin-geolocation.git</repo>
-    <issue>https://issues.apache.org/jira/browse/CB/component/12320638</issue>
+Inform the users about earthquake fault lines in the Philippines.<br />
 
-<gap:platforms>
+Weather advisories.</description>
+        <author>Team tripleQuote</author>
+		<gap:platforms>
+                <gap:platform name="ios" />
+                <gap:platform name="android" />
+                <gap:platform name="webos" />
+                <gap:platform name="symbian.wrt" />
+                <gap:platform name="blackberry" project="widgets"/>
+        </gap:platforms>
 
-<platform name="android">
+        <icon src="icon.png" gap:role="default" />
+        <preference name="phonegap-version" value="3.3.0" />
+        
+        <access origin="*" subdomains="true" />
+        <access uri="*" subdomains="true" />
+                 <access uri="http://gcccs.org/shareCare-testing/" subdomains="true" />
+        <feature name="http://api.phonegap.com/1.0/network"/>
+        <feature name="InAppBrowser">
+    <param name="android-package" value="org.apache.cordova.InAppBrowser" />
+        </feature>
+        
+        
+        <preference name="orientation" value="portrait" />
+        <preference name="fullscreen" value="true" />
+        <preference name="target-device" value="universal" />
 
-        <config-file target="AndroidManifest.xml" parent="/*">
-            <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-            <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-        </config-file>
-
-</platform>
-
-<gap:platform name="blackberry" project="widgets"/>
-</gap:platforms>
-<icon src="icon150.png" gap:role="default"/>
-<preference name="phonegap-version" value="3.1.0"/>
-<access origin="*" subdomains="true"/>
-<access uri="*" subdomains="true"/>
-<feature name="http://api.phonegap.com/1.0/network"/>
-<feature name="http://api.phonegap.com/1.0/camera"/>
-<feature name="http://api.phonegap.com/1.0/file"/>
-<feature name="InAppBrowser">
-<param name="android-package" value="org.apache.cordova.InAppBrowser"/>
-</feature>
-<feature name="Geolocation">
-<param name="android-package" value="org.apache.cordova.GeoBroker"/>
-</feature>
-<feature name="Accelerometer">
-    <param name="android-package" value="org.apache.cordova.AccelListener" />
-</feature>
-<preference name="orientation" value="portrait"/>
-<preference name="fullscreen" value="true"/>
-<preference name="target-device" value="universal"/>
 </widget>
-
-
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-xmlns:rim="http://www.blackberry.com/ns/widgets"
-xmlns:android="http://schemas.android.com/apk/res/android"
-           id="org.apache.cordova.geolocation"
-      version="0.3.10-dev">
-
-    <name>Geolocation</name>
-    <description>Cordova Geolocation Plugin</description>
-    <license>Apache 2.0</license>
-    <keywords>cordova,geolocation</keywords>
-    <repo>https://git-wip-us.apache.org/repos/asf/cordova-plugin-geolocation.git</repo>
-    <issue>https://issues.apache.org/jira/browse/CB/component/12320638</issue>
-
-    <!-- android -->
-    <platform name="android">
-
-        <config-file target="AndroidManifest.xml" parent="/*">
-            <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-            <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-        </config-file>
-
-    </platform>
