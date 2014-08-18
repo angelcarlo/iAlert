@@ -1,32 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="iAlert123"  version = "1.0.0" versionCode = "19" >
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="ialert123" version="1.0">
 
-
-        <name>iAlert</name>
-      <description>Quick Disaster Update via Twitter by reliable government agencies.</description>
-        <author>Team tripleQuote</author>
-		<gap:platforms>
-                <gap:platform name="ios" />
-                <gap:platform name="android" />
-                <gap:platform name="webos" />
-                <gap:platform name="symbian.wrt" />
-                <gap:platform name="blackberry" project="widgets"/>
-        </gap:platforms>
-
-        <icon src="icon150.png" gap:role="default" />
-        <preference name="phonegap-version" value="3.3.0" />
-        
-        <access origin="*" subdomains="true" />
-        <access uri="*" subdomains="true" />
-                 <access uri="http://gcccs.org/shareCare-testing/" subdomains="true" />
-        <feature name="http://api.phonegap.com/1.0/network"/>
-        <feature name="InAppBrowser">
-    <param name="android-package" value="org.apache.cordova.InAppBrowser" />
-        </feature>
-        
-        
-        <preference name="orientation" value="portrait" />
-        <preference name="fullscreen" value="true" />
-        <preference name="target-device" value="universal" />
-
+	<name>iaLert</name>
+	<description>Quick Disaster Update</description>
+	<author>Team tripleQuote</author>
+	<gap:platforms>
+		<gap:platform name="android" />
+	</gap:platforms>
+	
+	<icon src="icon150.png" width="86" height="86" gap:role="default" />
+	<preference name="phonegap-version" value="3.3.0" />
+	
+	<access origin="*" subdomains="true" />
+	<access uri="*" subdomains="true" />
+	<feature name="http://api.phonegap.com/1.0/network"/>
+	<feature name="http://api.phonegap.com/1.0/camera"/>
+	<feature name="http://api.phonegap.com/1.0/file"/>
+	<feature name="http://api.phonegap.com/1.0/geolocation"/>
+	
+	<gap:plugin name="org.apache.cordova.inappbrowser" />
+	<gap:plugin name="org.apache.cordova.camera" />
+	<gap:plugin name="org.apache.cordova.media" />
+	<gap:plugin name="org.apache.cordova.media-capture" />
+	<gap:plugin name="org.apache.cordova.geolocation" />
+	
+	<preference name="orientation" value="portrait" />
+	<preference name="fullscreen" value="true" />
+	<preference name="target-device" value="universal" />
 </widget>
