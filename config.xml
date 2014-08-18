@@ -1,12 +1,9 @@
-JSFIDDLE
-
-
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="iAlert123"  version = "1.0.0" versionCode = "19" >
 
 
         <name>iAlert</name>
-        <description>Quick Disaster Update via Twitter by reliable government agencies.<br /><br />
+      <description>Quick Disaster Update via Twitter by reliable government agencies.<br /><br />
 
 Locates nearby places to the user.<br />
 
